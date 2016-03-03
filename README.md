@@ -88,6 +88,7 @@ network.resilient_backpropagation(
  * PYPY friendly (requires pypy-numpy).
 
 ## Activation functions:
+ * Softmax
  * tanh
  * Sigmoid
  * Elliot function (fast sigmoid approximation)
