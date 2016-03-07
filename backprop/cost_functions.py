@@ -1,6 +1,14 @@
 import numpy as np
 import math
 
+def mean_squared_error( outputs, targets, derivative=False ):
+    e = outputs - targets
+    if derivative:
+        return e * (2 / len(e))
+    else:
+        return np.sum( np.power(e,2) ) / len(e)
+#end cost function
+
 def sum_squared_error( outputs, targets, derivative=False ):
     if derivative:
         return outputs - targets 
